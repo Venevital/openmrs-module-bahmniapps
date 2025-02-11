@@ -47,7 +47,7 @@ jobs:
         run: yarn test:ci
       - name: micro-frontends | build
         working-directory: micro-frontends
-        run: yarn build
+        run: yarn build --force
       - name: Package
         run: |
           set -x
