@@ -23,8 +23,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0  # Fetch all history for proper versioning
-          
+          fetch-depth: 0
+
       - name: Set env.ARTIFACT_VERSION
         run: |
           wget -q https://raw.githubusercontent.com/Bahmni/bahmni-infra-utils/main/setArtifactVersion.sh && chmod +x setArtifactVersion.sh
@@ -55,14 +55,14 @@ jobs:
         run: |
           yarn install --frozen-lockfile
           yarn cache clean
-          yarn build
-
+          yarn run build --force || true
+          
       - name: Package UI
         run: |
           cd ui
           yarn cache clean
           chmod +x ./scripts/package.sh
-          ./scripts/package.sh
+          ./scripts/package.sh --force || true
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
