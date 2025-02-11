@@ -49,7 +49,13 @@ jobs:
         working-directory: micro-frontends
         run: yarn build
       - name: Package
-        run: cd ui && yarn cache clean && /bin/bash ./scripts/package.sh
+        run: |
+          set -x
+          cd ui
+          ls -la ./scripts
+          yarn cache clean
+          /bin/bash ./scripts/package.sh
+
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
       # - name: Push Translations to Transifex
