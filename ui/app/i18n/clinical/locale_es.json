@@ -360,5 +360,25 @@
     "SHARE_PRESCRIPTION_MAIL_CONTENT": "Hi #recipientName,\nThanks for visiting #locationName on #visitDate. Your prescription is attached with this email. Wish you a speedy recovery.\nThanks.\n#locationName\n#locationAddress",
     "CHIEF_COMPLAINT_CODED_KEY": "Chief Complaint Coded",
     "SIGN_SYMPTOM_DURATION_KEY": "Sign/symptom duration",
-    "CHIEF_COMPLAINT_DURATION_UNIT_KEY": "Chief Complaint Duration"
+    "CHIEF_COMPLAINT_DURATION_UNIT_KEY": "Chief Complaint Duration",
+    "DASHBOARD_IPD_DRUG_CHART_TAB_KEY": "Gráfico de Medicación",
+    "FALSE_POSITIVE_ALERT": "La alerta se activó, pero fue un falso positivo y no se necesita ninguna acción.",
+    "NOT_APPLICABLE_TO_THE_PATIENT": "La alerta no aplica al paciente en cuestión.",
+    "ALREADY_RESOLVED_BY_MEDICATION_ADJUSTMENT": "La alerta se resolvió previamente ajustando la medicación del paciente.",
+    "ALREADY_MANAGED_BY_OTHER_MEANS": "La alerta se manejó previamente por otros medios, y no se necesita ninguna otra acción.",
+    "PATIENT_DECLINED_RECOMMENDED_ACTION": "El paciente rechazó la acción recomendada a pesar de la alerta.",
+    "CLINICIAN_JUDGMENT_OVERRODE_RECOMMENDATION": "El clínico usó su juicio para anular la recomendación generada por la alerta.",
+    "ALERT_TRIGGERED_IN_ERROR": "La alerta se activó por error y no se necesita ninguna acción.",
+    "INSUFFICIENT_INFORMATION_TO_ACT_ON_ALERT": "No hay suficiente información disponible para actuar sobre la alerta.",
+    "CDSS_WARNING": "Advertencia",
+    "CDSS_CRITICAL": "Crítico",
+    "CDSS_ALERT_DISMISSAL_REASON": "Seleccione el motivo de la desestimación",
+    "CDSS_INFO": "Información",
+    "CDSS_ALERT_DISMISS": "Descartar",
+    "DISMISSED_KEY": "Descartado",
+    "CDSS_ALERT_SAVE_ERROR": "Se debe abordar una alerta crítica de CDSS en la pestaña de Medicación antes de continuar con la operación de guardado",
+    "CDSS_ACTION": "Por favor, vaya a la pestaña de Medicación para tomar más acciones",
+    "MEDICATION_PRINT": "Imprimir",
+    "DAYS_ADMITTED_MESSAGE": "Días en el hospital"
+
 }

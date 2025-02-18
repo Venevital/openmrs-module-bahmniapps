@@ -26,5 +26,14 @@
     "EDIT_LABEL": "Editar",
     "NO_ORDERS_PRESENT": "No hay orden de tipo {{orderType}} para este paciente",
     "DEFAULT_SERVER_ERROR_MESSAGE": "Ha ocurrido un error en el servidor. La información no se ha guardado.",
-    "VISIT_CLOSED_CREATE_NEW_ERROR_MESSAGE": "Visita ya cerrada, crea una nueva visita para completar la orden"
+    "VISIT_CLOSED_CREATE_NEW_ERROR_MESSAGE": "Visita ya cerrada, crea una nueva visita para completar la orden",
+    "ORDER_DATE": "Fecha de pedido",
+    "ORDER_NAME": "Nombre del pedido",
+    "CLINICAL_YEARS_TRANSLATION_KEY": "años",
+    "CLINICAL_MONTHS_TRANSLATION_KEY": "meses",
+    "CLINICAL_DAYS_TRANSLATION_KEY": "días",
+    "GENDER_KEY": "Género:",
+    "AGE_KEY": "Edad:",
+    "DATE_OF_BIRTH_LABEL": "Fecha de nacimiento:",
+    "LOGOUT_TRANSLATION_KEY": "Cerrar sesión"
 }

@@ -65,5 +65,11 @@
     "EMPTY_WARD_MESSAGE": "No hay pacientes en este pabellón. ",
     "BEDMANAGEMENT_DISPOSITION_ADMIT_PATIENT": "Admitir Paciente",
     "BEDMANAGEMENT_DISPOSITION_DISCHARGE_PATIENT": "Dar de Alta Paciente",
-    "BEDMANAGEMENT_DISPOSITION_TRANSFER_PATIENT": "Transferir Paciente"
+    "BEDMANAGEMENT_DISPOSITION_TRANSFER_PATIENT": "Transferir Paciente",
+    "IPD_WARD_LIST_SEARCH_KEY": "Buscar...",
+    "CARE_VIEW_LABEL": "Cambiar a Vista de Cuidados",
+    "LOGOUT_TRANSLATION_KEY": "Cerrar sesión",
+    "MESSAGE_AUTO_CONVERT_TO_IPD_VISIT": "Visita {{visitType}} iniciada con éxito",
+    "DAYS_ADMITTED_MESSAGE": "Días en el hospital"
+
 }
