@@ -15,5 +15,24 @@
   "SEARCH_REACTION": "Search Reaction",
   "COMMON_REACTIONS": "Common Reactions",
   "ALLERGEN": "Allergen",
-  "EDIT_FORM_ERROR_MESSAGE": "Please enter a value in the mandatory fields or correct the value in the highlighted fields to proceed"
-}
+  "EDIT_FORM_ERROR_MESSAGE": "Please enter a value in the mandatory fields or correct the value in the highlighted fields to proceed",
+  "EMPTY_NOTES_ERROR": "La nota no puede estar vacía",
+  "OT_NOTES": "Notas",
+  "FROM": "Desde",
+  "TO": "Hasta",
+  "FROM_DATE_BEFORE_TO_DATE_ERROR": "La fecha de inicio debe ser anterior a la fecha de finalización",
+  "DATE_OUT_OF_RANGE_ERROR": "Por favor, seleccione una fecha dentro del rango válido",
+  "DELETE_NOTE_TITLE": "Eliminar Nota",
+  "YES_KEY": "Sí",
+  "NO_KEY": "No",
+  "DELETE_NOTE_MESSAGE": "¿Está seguro de que desea eliminar esta nota?",
+  "NOTES_PLACEHOLDER": "Ingrese un máximo de 150 caracteres",
+  "UPDATE_NOTE_TITLE": "Actualizar Nota",
+  "ADD_NOTE_TITLE": "Agregar Nota",
+  "LOADING": "Cargando...",
+  "UPDATE": "Actualizar",
+  "AKNOWLEDGE_BUTTON": "Reconocer",
+  "AKNOWLEDGEMENT_REQUIRED_TEXT": "Se requiere reconocimiento",
+  "NO_DRUGS_TO_BE_AKNOWLEDGED_TEXT": "No tiene nuevos medicamentos para reconocer"
+  }
+  
