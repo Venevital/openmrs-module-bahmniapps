@@ -14,9 +14,9 @@
 5. All Epics, Stories, Bugs, etc are tracked in [JIRA: Volunteer Board](https://bahmni.atlassian.net/secure/RapidBoard.jspa?rapidView=25&projectKey=BAH&quickFilter=66).
 6. To Run Bahmni locally you should use Docker option of Bahmni or Vagrant option. Docker is recommended.
 
-# Build
+# Buildll
 
-### Notes
+#### Notes
 1. This build requires Node, npm, yarn, grunt and compass (ruby).
 2. You can see the [Github Action Build](https://github.com/Bahmni/openmrs-module-bahmniapps/actions/workflows/build_publish.yml) to see what commands get executed.
 
