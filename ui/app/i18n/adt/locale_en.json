@@ -71,5 +71,6 @@
     "LOGOUT_TRANSLATION_KEY": "Logout",
     "MESSAGE_AUTO_CONVERT_TO_IPD_VISIT": "{{visitType}} Visit Started Successfully",
     "DAYS_ADMITTED_MESSAGE": "Days in hospital",
-    "ADMIT_KEY": "Admit"
+    "ADMIT_KEY": "Admit",
+    "MODULE_LABEL_TO_ADMIT_KEY": "To Admit"
 }
