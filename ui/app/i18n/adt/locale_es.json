@@ -70,6 +70,6 @@
     "CARE_VIEW_LABEL": "Cambiar a Vista de Cuidados",
     "LOGOUT_TRANSLATION_KEY": "Cerrar sesión",
     "MESSAGE_AUTO_CONVERT_TO_IPD_VISIT": "Visita {{visitType}} iniciada con éxito",
-    "DAYS_ADMITTED_MESSAGE": "Días en el hospital"
-
+    "DAYS_ADMITTED_MESSAGE": "Días en el hospital",
+    "ADMIT_KEY": "Admitir"
 }
