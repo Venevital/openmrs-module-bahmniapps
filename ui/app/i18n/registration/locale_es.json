@@ -122,6 +122,8 @@
     "PATIENT_ATTRIBUTE_FAMILY_NAME_LOCAL": "Last Name in Arabic",
     "PATIENT_ATTRIBUTE_MIDDLE_NAME_LOCAL": "Middle Name in Arabic",
     "RELATED_PATIENT_IDENTIFIER_LABEL": "Paciente",
-    "REGISTRATION_LABEL_SAVE_REDIRECTION": "Guardado y visita iniciada con éxito"
-
+    "REGISTRATION_LABEL_SAVE_REDIRECTION": "Guardado y visita iniciada con éxito",
+    "REGISTRATION_SEARCH_CONFIG_KEY": "Búsqueda",
+    "REGISTRATION_CREATE_NEW_CONFIG_KEY": "Crear Nuevo",
+    "Phone Number": "Número de Teléfono"
 }
