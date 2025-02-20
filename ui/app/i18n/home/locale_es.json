@@ -57,5 +57,7 @@
     "ACCEPT": "Aceptar",
     "SELECT_VALUE_FROM_AUTOCOMPLETE_DEFAULT_MESSAGE": "Por favor seleccione un valor de la lista de autocompletar",
     "LOGIN_LOCATION_PAGE_TITLE_TEXT": "Select login location es",
-    "LOCATION_REQUIRED_MESSAGE_KEY": "Por favor, seleccione un elemento en la lista"
+    "LOCATION_REQUIRED_MESSAGE_KEY": "Por favor, seleccione un elemento en la lista",
+    "REGISTRATION_SEARCH_CONFIG_KEY": "Búsqueda",
+    "REGISTRATION_CREATE_NEW_CONFIG_KEY": "Crear Nuevo"
 }

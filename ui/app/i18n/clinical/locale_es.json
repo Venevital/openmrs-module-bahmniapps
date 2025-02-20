@@ -380,5 +380,12 @@
     "CDSS_ACTION": "Por favor, vaya a la pestaña de Medicación para tomar más acciones",
     "MEDICATION_PRINT": "Imprimir",
     "DAYS_ADMITTED_MESSAGE": "Días en el hospital",
-    "MODULE_LABEL_NOTIFICATIONS_KEY": "Notificaciones"
+    "MODULE_LABEL_NOTIFICATIONS_KEY": "Notificaciones",
+    "All": "Todo",
+    "Programs": "Programas",
+    "Active": "Activo",
+    "My Patients": "Mis pacientes",
+    "PatientsByLocation": "Pacientes por ubicación",
+    "REGISTRATION_SEARCH_CONFIG_KEY": "Búsqueda",
+    "REGISTRATION_CREATE_NEW_CONFIG_KEY": "Crear Nuevo"
 }

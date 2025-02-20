@@ -57,5 +57,7 @@
     "NO_NAVIGATION_LINKS_AVAILABLE_MESSAGE": "No navigation links available.",
     "ACCEPT": "Accept",
     "SELECT_VALUE_FROM_AUTOCOMPLETE_DEFAULT_MESSAGE": "Please select a value from auto complete",
-    "LOCATION_REQUIRED_MESSAGE_KEY": "Please select item in the list"
+    "LOCATION_REQUIRED_MESSAGE_KEY": "Please select item in the list",
+    "REGISTRATION_SEARCH_CONFIG_KEY": "Search",
+    "REGISTRATION_CREATE_NEW_CONFIG_KEY": "Create New"
 }
