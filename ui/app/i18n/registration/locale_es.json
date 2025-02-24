@@ -125,5 +125,7 @@
     "REGISTRATION_LABEL_SAVE_REDIRECTION": "Guardado y visita iniciada con éxito",
     "REGISTRATION_SEARCH_CONFIG_KEY": "Búsqueda",
     "REGISTRATION_CREATE_NEW_CONFIG_KEY": "Crear Nuevo",
-    "Phone Number": "Número de Teléfono"
+    "Phone Number": "Número de Teléfono",
+    "Locality/Sector": "Localiteee",
+    "REGISTRATION_LABEL_STATE": "Estado"
 }
