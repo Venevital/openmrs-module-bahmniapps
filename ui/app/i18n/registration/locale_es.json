@@ -122,6 +122,13 @@
     "PATIENT_ATTRIBUTE_FAMILY_NAME_LOCAL": "Last Name in Arabic",
     "PATIENT_ATTRIBUTE_MIDDLE_NAME_LOCAL": "Middle Name in Arabic",
     "RELATED_PATIENT_IDENTIFIER_LABEL": "Paciente",
-    "REGISTRATION_LABEL_SAVE_REDIRECTION": "Guardado y visita iniciada con éxito"
+    "REGISTRATION_LABEL_SAVE_REDIRECTION": "Guardado y visita iniciada con éxito",
+    "Locality/Sector": "Localidad/Sector",
+    "City/Village": "Ciudad/Pueblo",
+    "Pin Code": "Código Postal",
+    "District": "Distrito",
+    "State": "Estado",
+    "Phone Number": "Número de Teléfono",
+    "Alternate Phone Number": "Número de Teléfono Alternativo"
 
 }
