@@ -37,8 +37,8 @@
             </option>
           </select>
           <div
-            ng-messages="loginLocationForm.location.$error"
-            ng-if="loginLocationForm.location.$touched || loginLocationForm.$submitted"
+            ng-messages="yourFormName.location.$error"
+            ng-if="yourFormName.location.$touched || yourFormName.$submitted"
           >
             <div ng-message="required">
               {{'LOCATION_REQUIRED_MESSAGE_KEY' | translate}}

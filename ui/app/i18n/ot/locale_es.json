@@ -126,6 +126,5 @@
     "NO_KEY": "No",
     "DELETE_NOTE_MESSAGE": "¿Está seguro de que desea eliminar esta nota?",
     "NOTES_PLACEHOLDER": "Ingrese un máximo de 150 caracteres",
-    "LOGOUT_TRANSLATION_KEY": "Cerrar sesión",
-    "PATIENT_LISTING_QUEUE_SCHEDULED_LABEL_KEY": "Programado"
+    "LOGOUT_TRANSLATION_KEY": "Cerrar sesión"
 }
