@@ -130,5 +130,7 @@
     "District": "District",
     "State": "State",
     "Phone Number": "Phone Number",
-    "Alternate Phone Number": "Alternate Phone Number"
+    "Alternate Phone Number": "Alternate Phone Number",
+    "REGISTRATION_SEARCH_CONFIG_KEY": "Search",
+    "REGISTRATION_CREATE_NEW_CONFIG_KEY": "Create New"
 }

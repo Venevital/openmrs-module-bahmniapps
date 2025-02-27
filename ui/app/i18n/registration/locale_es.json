@@ -128,7 +128,7 @@
     "Pin Code": "Código Postal",
     "District": "Distrito",
     "State": "Estado",
-    "Phone Number": "Número de Teléfono",
-    "Alternate Phone Number": "Número de Teléfono Alternativo"
+    "REGISTRATION_SEARCH_CONFIG_KEY": "Búsqueda",
+    "REGISTRATION_CREATE_NEW_CONFIG_KEY": "Crear Nuevo"
 
 }

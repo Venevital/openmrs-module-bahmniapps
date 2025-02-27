@@ -144,6 +144,8 @@
   "APPOINTMENT_STATUS_CHANGE_SUCCESS_MESSAGE": "Successfully changed appointment status to {{toStatus}}",
   "SELECT_APPOINTMENT_PROVIDER": "Seleccionar Proveedor",
   "INVITED_PROVIDERS": "Invitados",
-  "APPOINTMENT_PROVIDER_REMOVE_ACTION": "Retirar"
+  "APPOINTMENT_PROVIDER_REMOVE_ACTION": "Retirar",
+  "REGISTRATION_SEARCH_CONFIG_KEY": "Búsqueda",
+  "REGISTRATION_CREATE_NEW_CONFIG_KEY": "Crear Nuevo"
 
 }
