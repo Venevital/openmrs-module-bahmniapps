@@ -395,6 +395,7 @@
     "Active": "Active",
     "My Patients": "My Patients",
     "PatientsByLocation": "Patients by location",
+    "DASHBOARD_TITLE_BASIC_DETAILS_KEY": "Basic Details",
     "REGISTRATION_SEARCH_CONFIG_KEY": "Search",
     "REGISTRATION_CREATE_NEW_CONFIG_KEY": "Create New"
 }
