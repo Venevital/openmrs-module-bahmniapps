@@ -18,13 +18,21 @@ export const formatArrayDateToDefaultDateFormat = (dateTimeArray) => {
 export const formatGender = (gender) => {
   let formattedGender;
 
+  // if (gender === "M") {
+  //   formattedGender = "Male";
+  // } else if (gender === "F") {
+  //   formattedGender = "Female";
+  // } else {
+  //   formattedGender = "Other";
+  // }
   if (gender === "M") {
-    formattedGender = "Male";
+    formattedGender = "GENDER_MALE_KEY | translate";
   } else if (gender === "F") {
-    formattedGender = "Female";
+    formattedGender = "GENDER_FEMALE_KEY | translate";
   } else {
-    formattedGender = "Other";
+    formattedGender = "GENDER_OTHER_KEY | translate";
   }
+
 
   return formattedGender;
 };

@@ -132,5 +132,8 @@
     "S<u>e</u>arch": "B <u>ú</u> squeda",
     "REGISTRATION_CREATE_NEW_CONFIG_KEY": "Crear <u>N</u> uevo",
     "REGISTRATION_SEARCH_CONFIG_ACCESS_KEY": "ú",
-    "REGISTRATION_CREATE_NEW_CONFIG_ACCESS_KEY": "n"
+    "REGISTRATION_CREATE_NEW_CONFIG_ACCESS_KEY": "n",
+    "GENDER_MALE_KEY": "Masculino",
+    "GENDER_FEMALE_KEY": "Femenino",
+    "GENDER_OTHER_KEY": "Otro"
 }
