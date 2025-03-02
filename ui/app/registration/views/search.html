@@ -22,7 +22,7 @@
                     <input tabindex="4" type="text" id="name" ng-model="searchParameters.name" placeholder="{{ ::'REGISTRATION_LABEL_ENTER_NAME' | translate}}">
                 </article>
                 <article class="fl" ng-if="::customAttributesSearchConfig.show">
-                    <label for="name"><strong>::customAttributesSearchConfig | titleTranslate</strong></label>
+                    <label for="name"><strong>{{customAttributesSearchConfig | titleTranslate}}</strong></label>
                     <input tabindex="5" type="text" id="customAttribute" ng-model="searchParameters.customAttribute" placeholder="{{::customAttributesSearchConfig.placeholder | translate}}">
                 </article>
                 <article class="fl" ng-if="::addressSearchConfig.show">
