@@ -33,8 +33,6 @@
   "UPDATE": "Actualizar",
   "AKNOWLEDGE_BUTTON": "Reconocer",
   "AKNOWLEDGEMENT_REQUIRED_TEXT": "Se requiere reconocimiento",
-  "NO_DRUGS_TO_BE_AKNOWLEDGED_TEXT": "No tiene nuevos medicamentos para reconocer",
-  "REGISTRATION_SEARCH_CONFIG_KEY": "Búsqueda",
-  "REGISTRATION_CREATE_NEW_CONFIG_KEY": "Crear Nuevo"
+  "NO_DRUGS_TO_BE_AKNOWLEDGED_TEXT": "No tiene nuevos medicamentos para reconocer"
   }
   

@@ -34,7 +34,5 @@
     "INSUFFICIENT_PRIVILEGE_TO_EXPORT": "No tiene privilegios suficientes para exportar los datos",
     "EXPORT_PATIENT_DATA_WARNING": "Nota: ¡Los datos del paciente son confidenciales y deben manejarse con cuidado! Se recomienda exportar los datos en modo anonimizado, y garantizar que el archivo exportado sea manejado solo por las partes autorizadas.",
     "EXPORT_PATIENT_REQUEST_SUBMITTED": "Solicitud enviada. Haga clic en 'Actualizar' para ver el estado de la exportación.",
-    "EXPORT_PATIENT_REQUEST_SUBMIT_ERROR": "La solicitud de exportación FHIR falló. Por favor, contacte al administrador.",
-    "REGISTRATION_SEARCH_CONFIG_KEY": "Búsqueda",
-    "REGISTRATION_CREATE_NEW_CONFIG_KEY": "Crear Nuevo"
+    "EXPORT_PATIENT_REQUEST_SUBMIT_ERROR": "La solicitud de exportación FHIR falló. Por favor, contacte al administrador."
 }

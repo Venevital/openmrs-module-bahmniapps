@@ -71,11 +71,5 @@
     "LOGOUT_TRANSLATION_KEY": "Cerrar sesión",
     "MESSAGE_AUTO_CONVERT_TO_IPD_VISIT": "Visita {{visitType}} iniciada con éxito",
     "DAYS_ADMITTED_MESSAGE": "Días en el hospital",
-    "ADMIT_KEY": "Admitir",
-    "MODULE_LABEL_TO_ADMIT_KEY": "Admitir",
-    "MODULE_LABEL_ADMITTED_KEY": "Admitido",
-    "MODULE_LABEL_TO_DISCHARGE_KEY": "Dar de Alta",
-    "MODULE_LABEL_ALL_KEY": "Todos",
-    "REGISTRATION_SEARCH_CONFIG_KEY": "Búsqueda",
-    "REGISTRATION_CREATE_NEW_CONFIG_KEY": "Crear Nuevo"
+    "ADMIT_KEY": "Admitir"
 }

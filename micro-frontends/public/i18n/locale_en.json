@@ -33,7 +33,5 @@
   "UPDATE": "Update",
   "AKNOWLEDGE_BUTTON": "Acknowledge",
   "AKNOWLEDGEMENT_REQUIRED_TEXT": "Acknowledgement required",
-  "NO_DRUGS_TO_BE_AKNOWLEDGED_TEXT": "You have no new drugs to be acknowledged",
-  "REGISTRATION_SEARCH_CONFIG_KEY": "Search",
-  "REGISTRATION_CREATE_NEW_CONFIG_KEY": "Create New"
+  "NO_DRUGS_TO_BE_AKNOWLEDGED_TEXT": "You have no new drugs to be acknowledged"
 }
