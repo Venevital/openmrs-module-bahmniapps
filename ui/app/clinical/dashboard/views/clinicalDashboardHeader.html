@@ -23,8 +23,7 @@
                 <scrollable-tabs>
                     <ul>
                         <li class="tab-item" ng-repeat="board in availableBoards track by $index" ng-class="{'tab-selected':board.isSelectedTab}">
-                            <!-- <a ng-click="showBoard($index)">{{ board | titleTranslate }}</a> -->
-                             <a ng-click="showBoard($index)">{{ board | translate }}</a>
+                            <a ng-click="showBoard($index)">{{ board | titleTranslate }}</a>
                         </li>
                     </ul>
                 </scrollable-tabs>

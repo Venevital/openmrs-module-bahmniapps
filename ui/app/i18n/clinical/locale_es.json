@@ -390,6 +390,7 @@
     "CDSS_ACTION": "Por favor, vaya a la pestaña de Medicamentos para tomar más acción",
     "MEDICATION_PRINT": "Imprimir",
     "DAYS_ADMITTED_MESSAGE": "Días en el hospital",
+    "MODULE_LABEL_NOTIFICATIONS_KEY": "Notificaciones",
     "DASHBOARD_TITLE_BASIC_DETAILS_KEY": "Detalles básicos",
     "DASHBOARD_TITLE_PROCEDURE_DISPLAY_CONTROL_KEY": "Procedimiento",
     "PATIENT_INFO_NAME": "Nombre",
