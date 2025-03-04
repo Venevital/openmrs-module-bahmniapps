@@ -24,6 +24,7 @@
     "CHOOSE_ANSWER_FROM_DROPDOWN_LABEL": "Escoja respuesta",
     "DELETE_LABEL": "Eliminar",
     "EDIT_LABEL": "Editar",
+    "NEW_ORDER_LABEL": "Nuevo",
     "NO_ORDERS_PRESENT": "No hay orden de tipo {{orderType}} para este paciente",
     "DEFAULT_SERVER_ERROR_MESSAGE": "Ha ocurrido un error en el servidor. La información no se ha guardado.",
     "VISIT_CLOSED_CREATE_NEW_ERROR_MESSAGE": "Visita ya cerrada, crea una nueva visita para completar la orden",

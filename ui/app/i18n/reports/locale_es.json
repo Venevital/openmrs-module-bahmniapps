@@ -47,5 +47,4 @@
     "REPORT_DATE_RANGE": "Seleccionar rango de fechas",
     "START_DATE_CANNOT_LATER_THAN_STOP_DATE": "La fecha de inicio no puede ser posterior a la fecha de fin",
     "LOGOUT_TRANSLATION_KEY": "Cerrar sesión"
-
 }
