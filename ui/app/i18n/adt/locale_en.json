@@ -71,5 +71,17 @@
     "LOGOUT_TRANSLATION_KEY": "Logout",
     "MESSAGE_AUTO_CONVERT_TO_IPD_VISIT": "{{visitType}} Visit Started Successfully",
     "DAYS_ADMITTED_MESSAGE": "Days in hospital",
-    "ADMIT_KEY": "Admit"
+    "ADMIT_KEY": "Admit",
+    "Bed": "Bed",
+    "Name": "Name",
+    "Age": "Age",
+    "Gender": "Gender",
+    "District": "District",
+    "Village": "Village",
+    "Admission By": "Admission By",
+    "Admission Time": "Admission Time",
+    "Deposition By": "Deposition By",
+    "Deposition Time": "Deposition Time",
+    "ADT Notes": "ADT Notes",
+    "Diagnoses": "Diagonses"
 }

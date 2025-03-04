@@ -71,5 +71,17 @@
     "LOGOUT_TRANSLATION_KEY": "Cerrar sesión",
     "MESSAGE_AUTO_CONVERT_TO_IPD_VISIT": "Visita {{visitType}} iniciada con éxito",
     "DAYS_ADMITTED_MESSAGE": "Días en el hospital",
-    "ADMIT_KEY": "Admitir"
+    "ADMIT_KEY": "Admitir",
+    "Bed": "Cama",
+  "Name": "Nombre",
+  "Age": "Edad",
+  "Gender": "Género",
+  "District": "Distrito",
+  "Village": "Pueblo",
+  "Admission By": "Admitido Por",
+  "Admission Time": "Hora de Admisión",
+  "Deposition By": "Depositado Por",
+  "Deposition Time": "Hora de Depósito",
+  "ADT Notes": "Notas de ADT",
+  "Diagnosis": "Diagnóstico"
 }

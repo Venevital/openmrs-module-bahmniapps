@@ -96,7 +96,8 @@ export function AddAllergy(props) {
               <div className={"section-next-ui"}>
                 <div className={"font-large bold"}>
                   <FormattedMessage id={"SEVERITY"} defaultMessage={"Severity"} />
-                  <span className={"red-text"}>&nbsp;*</span>
+                    <span className={ "red-text" }>&nbsp;*&nbsp;abcd</span>
+                    
                 </div>
                 <RadioButtonGroup
                   name={"severity"}
