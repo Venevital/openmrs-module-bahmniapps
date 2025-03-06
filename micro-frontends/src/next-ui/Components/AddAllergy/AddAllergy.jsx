@@ -4,7 +4,7 @@ import { RadioButton, RadioButtonGroup, TextArea } from "carbon-components-react
 import { isEmpty } from "lodash";
 import propTypes from "prop-types";
 import React, { Fragment, useEffect } from "react";
-import { FormattedMessage } from "react-intl";
+import { FormattedMessage, useIntl } from "react-intl";
 import "../../../styles/common.scss";
 import {
   saveAllergiesAPICall
@@ -20,6 +20,8 @@ export function AddAllergy(props) {
   const [reactions, setReactions] = React.useState([]);
   const [severity, setSeverity] = React.useState("");
   const [notes, setNotes] = React.useState("");
+  const intl = useIntl();
+  
   const backToAllergenText = (
     <FormattedMessage id={"BACK_TO_ALLERGEN"} defaultMessage={"Back to Allergies"} />
   );
@@ -96,7 +98,7 @@ export function AddAllergy(props) {
               <div className={"section-next-ui"}>
                 <div className={"font-large bold"}>
                   <FormattedMessage id={"SEVERITY"} defaultMessage={"Severity"} />
-                    <span className={ "red-text" }>&nbsp;*&nbsp;abcd</span>
+                    <span className={ "red-text" }>&nbsp;*</span>
                     
                 </div>
                 <RadioButtonGroup
@@ -113,7 +115,10 @@ export function AddAllergy(props) {
                 </RadioButtonGroup>
                 <TextArea
                   labelText={""}
-                  placeholder={"Additional comments such as onset date etc."}
+                  placeholder={ intl.formatMessage({
+                    id: "ADDITIONAL_COMMENTS_PLACEHOLDER",
+                    defaultMessage: "Additional comments such as onset date etc."
+                  }) }
                   onBlur={(e) => {
                     setNotes(e.target.value);
                   }}
