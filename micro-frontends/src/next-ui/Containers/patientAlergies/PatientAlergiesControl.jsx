@@ -5,7 +5,7 @@ import "../../../styles/carbon-theme.scss";
 import "../../../styles/common.scss";
 import "./patientAllergiesControl.scss";
 import { AddAllergy } from "../../Components/AddAllergy/AddAllergy";
-import { FormattedMessage } from "react-intl";
+import { FormattedMessage, IntlProvider } from "react-intl";
 import {
   fetchAllergensOrReactions,
   fetchAllergiesAndReactionsForPatient
@@ -212,7 +212,7 @@ export function PatientAlergiesControl(props) {
                 <ViewAllergiesAndReactions allergies={allergiesAndReactions} showTextAsAbnormal={appService.getAppDescriptor().getConfigValue("showTextAsAbnormal")}/>
             }
           { showAddAllergyPanel && (
-            <I18nProvider>
+            <IntlProvider locale="en">
               <AddAllergy
                 reaction={transformedReactionData}
                 allergens={transformedAllergenData}
@@ -233,7 +233,7 @@ export function PatientAlergiesControl(props) {
                   }
                 }}
               />
-            </I18nProvider>
+            </IntlProvider>
           )}
           <NotificationCarbon messageDuration={3000} onClose={()=>{setShowSuccessPopup(false); window.location.reload()}} showMessage={showSuccessPopup} kind={"success"} title={"Allergy saved successfully"} hideCloseButton={true}/>
           <NotificationCarbon messageDuration={3000} onClose={()=>{setShowErrorPopup(false);}} showMessage={showErrorPopup} kind={"error"} title={"Error saving allergy"} hideCloseButton={true}/>

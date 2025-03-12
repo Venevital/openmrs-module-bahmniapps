@@ -13,7 +13,7 @@ import SaveAndCloseButtons from "../SaveAndCloseButtons/SaveAndCloseButtons.jsx"
 import { SearchAllergen } from "../SearchAllergen/SearchAllergen.jsx";
 import { SelectReactions } from "../SelectReactions/SelectReactions";
 import "./AddAllergy.scss";
-import { I18nProvider } from "../i18n/I18nProvider.jsx";
+import { IntlProvider } from "react-intl";
 
 export function AddAllergy(props) {
   const { patient, provider, onClose, allergens, reaction, severityOptions, onSave } = props;
@@ -62,7 +62,7 @@ export function AddAllergy(props) {
     onSave(isSaveSuccess);
   }, [isSaveSuccess]);
   return (
-    <I18nProvider>
+    <IntlProvider locale="en">
       <div className={"next-ui"}>
         <div className={"overlay-next-ui"}>
           <div className={"heading"}>{allergiesHeading}</div>
@@ -139,7 +139,7 @@ export function AddAllergy(props) {
           </div>
         </div>
       </div>
-    </I18nProvider>  
+    </IntlProvider>  
   );
 }
 
