@@ -8,7 +8,7 @@
     "REPORTS_NAME_HEADER_KEY": "Nombre",
     "REPORTS_START_DATE_HEADER_KEY": "Fecha de inicio",
     "REPORTS_END_DATE_HEADER_KEY": "Fecha final",
-    "RUN_NOW_BUTTON_KEY": "Ejecutar ahora",
+    "RUN_NOW_BUTTON_KEY": "Ejecutar",
     "RUN_REPORT_BUTTON_KEY": "Ejecutar informe",
     "QUEUE_BUTTON_KEY": "Fila",
     "REPORT_FORMAT_KEY": "Formato",
