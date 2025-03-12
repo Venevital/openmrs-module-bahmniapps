@@ -304,6 +304,7 @@
   "TELECONSULTATION_APPOINTMENT_BOOKING_MESSAGE": "Una cita de teleconsulta para #patientName, #patientId en #dateTime para #service está reservada en #clinicName. Haga clic en el enlace #meetingLink el #dateTime para unirse a la consulta. Para cualquier consulta llámenos al #helpDeskNumber.",
   "PROVIDERS": "Proveedores",
   "LOCATIONS": "Ubicaciones",
-  "SPECIALITIES": "Especialidades"
+  "SPECIALITIES": "Especialidades",
+  "ADDITIONAL_COMMENTS_PLACEHOLDER": "Comentarios adicionales como la fecha de inicio, etc."
   }
   

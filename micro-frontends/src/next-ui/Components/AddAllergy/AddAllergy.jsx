@@ -4,7 +4,7 @@ import { RadioButton, RadioButtonGroup, TextArea } from "carbon-components-react
 import { isEmpty } from "lodash";
 import propTypes from "prop-types";
 import React, { Fragment, useEffect } from "react";
-import { FormattedMessage } from "react-intl";
+import { FormattedMessage, useIntl } from "react-intl";
 import "../../../styles/common.scss";
 import {
   saveAllergiesAPICall
@@ -13,6 +13,7 @@ import SaveAndCloseButtons from "../SaveAndCloseButtons/SaveAndCloseButtons.jsx"
 import { SearchAllergen } from "../SearchAllergen/SearchAllergen.jsx";
 import { SelectReactions } from "../SelectReactions/SelectReactions";
 import "./AddAllergy.scss";
+import { I18nProvider } from "../i18n/I18nProvider.jsx";
 
 export function AddAllergy(props) {
   const { patient, provider, onClose, allergens, reaction, severityOptions, onSave } = props;
@@ -20,6 +21,7 @@ export function AddAllergy(props) {
   const [reactions, setReactions] = React.useState([]);
   const [severity, setSeverity] = React.useState("");
   const [notes, setNotes] = React.useState("");
+  const intl = useIntl();
   const backToAllergenText = (
     <FormattedMessage id={"BACK_TO_ALLERGEN"} defaultMessage={"Back to Allergies"} />
   );
@@ -60,79 +62,84 @@ export function AddAllergy(props) {
     onSave(isSaveSuccess);
   }, [isSaveSuccess]);
   return (
-    <div className={"next-ui"}>
-      <div className={"overlay-next-ui"}>
-        <div className={"heading"}>{allergiesHeading}</div>
-        <span className="close" onClick={onClose}>
-          <Close24 />
-        </span>
-        <div className={"add-allergy-container"}>
-          {isEmpty(allergen) ? (
-            <div data-testid={"search-allergen"}>
-              <SearchAllergen
-                allergens={allergens}
-                onChange={(allergen) => {
-                  setAllergen(allergen);
-                }}
-              />
-            </div>
-          ) : (
-            <Fragment>
-              <div className={"back-button"}>
-                <ArrowLeft size={20} onClick={clearForm} />
-                <div onClick={clearForm}>{backToAllergenText}</div>
-              </div>
-              <div data-testid={"select-reactions"}>
-                <SelectReactions
-                  reactions={reaction}
-                  selectedAllergen={allergen}
-                  onChange={(reactions) => {
-                    setReactions(reactions);
-                    setIsSaveEnabled(reactions && severity && reactions.length > 0);
+    <I18nProvider>
+      <div className={"next-ui"}>
+        <div className={"overlay-next-ui"}>
+          <div className={"heading"}>{allergiesHeading}</div>
+          <span className="close" onClick={onClose}>
+            <Close24 />
+          </span>
+          <div className={"add-allergy-container"}>
+            {isEmpty(allergen) ? (
+              <div data-testid={"search-allergen"}>
+                <SearchAllergen
+                  allergens={allergens}
+                  onChange={(allergen) => {
+                    setAllergen(allergen);
                   }}
                 />
               </div>
-
-              <div className={"section-next-ui"}>
-                <div className={"font-large bold"}>
-                  <FormattedMessage id={"SEVERITY"} defaultMessage={"Severity"} />
-                    <span className={ "red-text" }>&nbsp;*&nbsp;abcd</span>
-                    
+            ) : (
+              <Fragment>
+                <div className={"back-button"}>
+                  <ArrowLeft size={20} onClick={clearForm} />
+                  <div onClick={clearForm}>{backToAllergenText}</div>
                 </div>
-                <RadioButtonGroup
-                  name={"severity"}
-                  onChange={(e) => {
-                    setSeverity(e);
-                    setIsSaveEnabled(reactions && reactions.length > 0 && e);
-                  }}
-                  className={"severity-options-group"}
-                >
-                  {severityOptions.map((option) => {
-                    return <RadioButton key={option.uuid} labelText={option.name} value={option.uuid}></RadioButton>;
-                  })}
-                </RadioButtonGroup>
-                <TextArea
-                  labelText={""}
-                  placeholder={"Additional comments such as onset date etc."}
-                  onBlur={(e) => {
-                    setNotes(e.target.value);
-                  }}
-                />
-              </div>
-            </Fragment>
-          )}
-        </div>
-        <div>
-          <SaveAndCloseButtons
-            onSave={async () => {
-              await saveAllergies(allergen, reactions, severity, notes);
-            }}
-            onClose={onClose}
-            isSaveDisabled={!isSaveEnabled}
-          />
+                <div data-testid={"select-reactions"}>
+                  <SelectReactions
+                    reactions={reaction}
+                    selectedAllergen={allergen}
+                    onChange={(reactions) => {
+                      setReactions(reactions);
+                      setIsSaveEnabled(reactions && severity && reactions.length > 0);
+                    }}
+                  />
+                </div>
+
+                <div className={"section-next-ui"}>
+                  <div className={"font-large bold"}>
+                    <FormattedMessage id={"SEVERITY"} defaultMessage={"Severity"} />
+                      <span className={ "red-text" }>&nbsp;*</span>
+                      
+                  </div>
+                  <RadioButtonGroup
+                    name={"severity"}
+                    onChange={(e) => {
+                      setSeverity(e);
+                      setIsSaveEnabled(reactions && reactions.length > 0 && e);
+                    }}
+                    className={"severity-options-group"}
+                  >
+                    {severityOptions.map((option) => {
+                      return <RadioButton key={option.uuid} labelText={option.name} value={option.uuid}></RadioButton>;
+                    })}
+                  </RadioButtonGroup>
+                  <TextArea
+                    labelText={""}
+                    placeholder={intl.formatMessage({
+                                id: "ADDITIONAL_COMMENTS_PLACEHOLDER",
+                                defaultMessage: "Additional comments such as onset date etc."
+                            })}
+                    onBlur={(e) => {
+                      setNotes(e.target.value);
+                    }}
+                  />
+                </div>
+              </Fragment>
+            )}
+          </div>
+          <div>
+            <SaveAndCloseButtons
+              onSave={async () => {
+                await saveAllergies(allergen, reactions, severity, notes);
+              }}
+              onClose={onClose}
+              isSaveDisabled={!isSaveEnabled}
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </I18nProvider>  
   );
 }
 
