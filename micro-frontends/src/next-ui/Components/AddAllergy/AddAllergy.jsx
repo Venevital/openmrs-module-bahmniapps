@@ -62,7 +62,7 @@ export function AddAllergy(props) {
     onSave(isSaveSuccess);
   }, [isSaveSuccess]);
   return (
-    <IntlProvider locale="en">
+    <IntlProvider>
       <div className={"next-ui"}>
         <div className={"overlay-next-ui"}>
           <div className={"heading"}>{allergiesHeading}</div>

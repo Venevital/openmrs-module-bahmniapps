@@ -66,7 +66,7 @@ describe("AddAllergy", () => {
   };
   it("should render the component", () => {
     const { container } = render(
-      <IntlProvider locale="en">
+      <IntlProvider>
         <AddAllergy
           onClose={onClose}
           onSave={onSave}
@@ -83,7 +83,7 @@ describe("AddAllergy", () => {
 
   it("should call onClose when close button is clicked", () => {
     const { container } = render(
-      <IntlProvider locale="en">
+      <IntlProvider>
         <AddAllergy
           onClose={onClose}
           onSave={onSave}
@@ -101,7 +101,7 @@ describe("AddAllergy", () => {
 
   it("should show Search Allergen when allergen is empty", () => {
     const { getByTestId } = render(
-      <IntlProvider locale="en">
+      <IntlProvider>
         <AddAllergy
           onClose={onClose}
           onSave={onSave}
@@ -118,7 +118,7 @@ describe("AddAllergy", () => {
 
   it("should show Allergen List when Search is done", () => {
     render(
-      <IntlProvider locale="en">
+      <IntlProvider>
         <AddAllergy
           onClose={onClose}
           onSave={onSave}
@@ -137,7 +137,7 @@ describe("AddAllergy", () => {
 
   it("should show select reactions when allergen is selected", () => {
     render(
-      <IntlProvider locale="en">
+      <IntlProvider>
         <AddAllergy
           onClose={onClose}
           onSave={onSave}
@@ -162,7 +162,7 @@ describe("AddAllergy", () => {
 
   it("should show search Allergen ocClick of back button", () => {
     render(
-      <IntlProvider locale="en">
+      <IntlProvider>
         <AddAllergy
           onClose={onClose}
           onSave={onSave}
@@ -185,7 +185,7 @@ describe("AddAllergy", () => {
 
   it("should render severity after allergen is selected", () => {
     render(
-      <IntlProvider locale="en">
+      <IntlProvider>
         <AddAllergy
           onClose={onClose}
           onSave={onSave}
@@ -207,7 +207,7 @@ describe("AddAllergy", () => {
 
   it("should enable save button when reactions and severity are selected", () => {
     const { container } = render(
-      <IntlProvider locale="en">
+      <IntlProvider>
         <AddAllergy
           onClose={onClose}
           onSave={onSave}
@@ -230,7 +230,7 @@ describe("AddAllergy", () => {
 
   it("should update severity when severity is changed", () => {
     const { container } = render(
-      <IntlProvider locale="en">
+      <IntlProvider>
         <AddAllergy
           onClose={onClose}
           onSave={onSave}
@@ -249,7 +249,7 @@ describe("AddAllergy", () => {
 
   it("should render notes", () => {
     const { container } = render(
-      <IntlProvider locale="en">
+      <IntlProvider>
         <AddAllergy
           onClose={onClose}
           onSave={onSave}
@@ -272,7 +272,7 @@ describe("AddAllergy", () => {
 
   it("should save allergies successfully and set isSaveSuccess to true", async () => {
     const { container } = render(
-      <IntlProvider locale="en">
+      <IntlProvider>
         <AddAllergy
           onClose={onClose}
           onSave={onSave}
@@ -308,7 +308,7 @@ describe("AddAllergy", () => {
 
   it("should set isSaveSuccess to false if saveAllergiesAPICall fails", async () => {
     const { container } = render(
-      <IntlProvider locale="en">
+      <IntlProvider>
         <AddAllergy
           onClose={onClose}
           onSave={onSave}

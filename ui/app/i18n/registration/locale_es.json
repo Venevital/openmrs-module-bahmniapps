@@ -125,5 +125,6 @@
     "REGISTRATION_LABEL_SAVE_REDIRECTION": "Guardado y visita iniciada con éxito",
     "GENDER_MALE_KEY": "Masculino",
     "GENDER_FEMALE_KEY": "Femenino",
-    "GENDER_OTHER_KEY": "Otro"
+    "GENDER_OTHER_KEY": "Otro",
+    "Patient Identifier": "Identificador del paciente"
 }

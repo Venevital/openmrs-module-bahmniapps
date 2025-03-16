@@ -212,7 +212,7 @@ export function PatientAlergiesControl(props) {
                 <ViewAllergiesAndReactions allergies={allergiesAndReactions} showTextAsAbnormal={appService.getAppDescriptor().getConfigValue("showTextAsAbnormal")}/>
             }
           { showAddAllergyPanel && (
-            <IntlProvider locale="en">
+            <IntlProvider>
               <AddAllergy
                 reaction={transformedReactionData}
                 allergens={transformedAllergenData}
