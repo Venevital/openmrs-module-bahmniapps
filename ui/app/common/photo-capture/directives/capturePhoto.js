@@ -95,6 +95,7 @@ angular.module('bahmni.common.photoCapture')
                 } else {
                     alert('Photo capture is not supported in your browser. Please use chrome');
                 }
+            
             };
 
             scope.captureConfirmImage = function () {
@@ -109,6 +110,7 @@ angular.module('bahmni.common.photoCapture')
 
             captureDialogElement.dialog({
                 autoOpen: false, height: 300, width: 500, modal: true, dialogClass: 'photo-capture-dialog',
+                title: $translate.instant("TAKE_PATIENT_PHOTO_TITLE"),
                 close: function () {
                     dialogOpen = false;
                     if (captureActiveStream) {
@@ -130,6 +132,8 @@ angular.module('bahmni.common.photoCapture')
                     return;
                 }
                 dialogOpen = true;
+                uploadDialogElement.dialog("option", "title", $translate.instant("MANUAL_UPLOAD_PATIENT_PHOTO_TITLE"));
+
                 uploadDialogElement.dialog('open');
             };
 
@@ -176,6 +180,7 @@ angular.module('bahmni.common.photoCapture')
 
             uploadDialogElement.dialog({
                 autoOpen: false, height: 350, width: 350, modal: true, dialogClass: 'photo-upload-dialog',
+                title: $translate.instant("UPLOAD_PATIENT_PHOTO_TITLE"),
                 close: function () {
                     dialogOpen = false;
                 }
