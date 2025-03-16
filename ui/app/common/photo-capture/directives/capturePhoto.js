@@ -95,7 +95,6 @@ angular.module('bahmni.common.photoCapture')
                 } else {
                     alert('Photo capture is not supported in your browser. Please use chrome');
                 }
-            
             };
 
             scope.captureConfirmImage = function () {
