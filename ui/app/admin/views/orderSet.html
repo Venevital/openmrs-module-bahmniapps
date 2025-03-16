@@ -1,13 +1,13 @@
 <div ng-controller="OrderSetController">
     <section class="section-grid orderSet-container">
-        <h2 class="section-title">Order Set Details</h2>
+        <h2 class="section-title">{{'ORDER_SET_DETAIL_TITLE' | translate}}</h2>
 
         <form single-submit="save()" class="orderSet-form form clearfix">
             <section class="new-orderSet-wrapper clearfix">
                 <div class="row">
                     <div class="col col1 form-field">
                         <div class="field-attribute">
-                            <label>Name <span class="asterick">*</span></label>
+                            <label>{{'ORDER_SET_NAME' | translate}} <span class="asterick">*</span></label>
                         </div>
                         <div class="field-value">
                             <input type="text" ng-model="orderSet.name" required>
@@ -15,7 +15,7 @@
                     </div>
                     <div class="col col2 form-field">
                         <div class="field-attribute">
-                            <label>Description <span class="asterick">*</span>
+                            <label>{{'ORDER_SET_DESCRIPTION' | translate}} <span class="asterick">*</span>
                             </label>
                         </div>
                         <div class="field-value">
@@ -24,7 +24,7 @@
                     </div>
                     <div class="col col3 form-field">
                         <div class="field-attribute">
-                            <label>Operator <span class="asterick">*</span>
+                            <label>{{'ORDER_SET_OPERATOR' | translate}} <span class="asterick">*</span>
                             </label>
                         </div>
                         <div class="field-value">
@@ -36,19 +36,19 @@
             </section>
             <div class="orderSetMember-wrapper">
 
-                <input type="button" ng-click="addOrderSetMembers()" value="Add New Members"
+                <input type="button" ng-click="addOrderSetMembers()" value="{{'ADD_NEW_MEMEBER' | translate}}"
                        class="button add-more-btn btn-small fr">
 
                 <fieldset>
                     <legend class="mylegend">
-                        <span> Order Set Members</span>
+                        <span> {{'ORDER_SET_MEMBER' | translate}}</span>
                     </legend>
                     <div ng-repeat="orderSetMember in orderSet.orderSetMembers" ng-if="!(orderSetMember.voided || orderSetMember.retired)"  class="primary-section-grid clearfix">
                         <div class="row">
                             <div class="clearfix order-drug-option" ng-class="{'column-container' : orderSetMember.concept.uuid}">
                                 <div class="col col1 form-field">
                                     <div class="field-attribute">
-                                        <label>Order Type <span class="asterick">*</span></label>
+                                        <label>{{'ORDER_TYPE_LABEL' | translate}} <span class="asterick">*</span></label>
                                     </div>
                                     <div class="field-value">
                                         <select ng-model="orderSetMember.orderType.uuid"
@@ -59,7 +59,7 @@
                                 </div>
                                 <div class="col col2 form-field">
                                     <div class="field-attribute">
-                                        <label>Concept Name<span class="asterick">*</span></label>
+                                        <label>{{'CONCEPT_NAME_LABEL' | translate}}<span class="asterick">*</span></label>
                                     </div>
                                     <div class="field-value">
                                         <input class="enter-concept"
@@ -74,7 +74,7 @@
                                                ng-change="onChange(orderSetMember)"
                                                ng-trim="false"
                                                required
-                                               placeholder="Enter a concept name"/>
+                                               placeholder="{{'ENTER_CONCEPT_PLACEHOLDER' | translate}}"/>
                                     </div>
                                 </div>
                                 <div class="col col3 form-field">
@@ -100,8 +100,8 @@
                 </fieldset>
             </div>
             <div class="submit-btn-container clearfix">
-                <button type="submit" class="secondary-button fr" accesskey="s"><u>S</u>ave</button>
-                <button type="reset" class="button fr" accesskey="c"><u>C</u>ancel</button>
+                <button type="submit" class="secondary-button fr" accesskey="s">ORDER_SET_SAVE_KEY</button>
+                <button type="reset" class="button fr" accesskey="c">ORDER_SET_CANCEL_KEY</button>
             </div>
         </form>
     </section>

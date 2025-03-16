@@ -1,12 +1,12 @@
 <div nv-file-drop uploader="uploader" filters="queueLimit, customFilter">
 
     <div class="note-warning" >
-        Note: If Provider details aren't provided in the CSV, logged in user will be considered as the Provider.
+        {{'CSV_UPLOAD_WARNING' | translate}}
     </div>
     <div class="csv-upload-page">
         <div>
             <section class="primary-section-grid">
-                <h2 class="section-title">Select files</h2>
+                <h2 class="section-title">{{'CSV_UPLOAD_SELECT_FILES' | translate}}</h2>
                 <form class="select-file-form">
                     <fieldset class="select-file-type">
                         <ul ng-repeat="(key, urlMap) in urlMaps">
@@ -20,22 +20,22 @@
                     <fieldset class="upload-selected-file">
                         <input id="inputFileUpload" class="input-file-upload" type="file" nv-file-select uploader="uploader" multiple />
                         <label for="inputFileUpload" class="button confirm">
-                            Choose file(s)
+                            {{'CSV_CHOOSE_FILE_LABEL' | translate}}
                         </label>
                     </fieldset>
                 </form>
             </section>
 
             <section ng-if="uploader.queue.length" class="section-grid">
-                <h2 class="section-title">File to Upload</h2>
+                <h2 class="section-title">{{'CSV_FILE_TO_UPLOAD' | translate}}</h2>
                 <table class="file-to-upload">
                     <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>Size</th>
-                            <th>Upload Progress</th>
-                            <th>Upload Status</th>
-                            <th class="actions">Actions</th>
+                            <th>{{'CSV_FILE_NAME' | translate}}</th>
+                            <th>{{'CSV_FILE_SIZE' | translate}}</th>
+                            <th>{{'CSV_UPLOAD_PROGRESS' | translate}}</th>
+                            <th>{{'CSV_UPLOAD_STATUS' | translate}}</th>
+                            <th class="actions">{{'CSV_UPLOAD_ACTIONS' | translate}}</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -46,19 +46,19 @@
                                 <progress value="{{item.progress}}" max="100"></progress>
                             </td>
                             <td>
-                                <span ng-if="item.isSuccess">Success</span>
-                                <span ng-if="item.isCancel">Canceled</span>
-                                <span ng-if="item.isError">Error</span>
+                                <span ng-if="item.isSuccess">{{'CSV_UPLOAD_SUCCESS' | translate}}</span>
+                                <span ng-if="item.isCancel">{{'CSV_UPLOAD_CANCELED' | translate}}</span>
+                                <span ng-if="item.isError">{{'CSV_UPLOAD_ERROR' | translate}}</span>
                             </td>
                             <td nowrap>
                                 <button type="button" ng-click="item.upload()" ng-disabled="item.isReady || item.isUploading || item.isSuccess">
-                                    Upload
+                                    {{'CSV_UPLOAD_UPLOAD' | translate}}
                                 </button>
                                 <button type="button" ng-click="item.cancel()" ng-disabled="!item.isUploading">
-                                    Cancel
+                                    {{'CSV_UPLOAD_CANCEL' | translate}}
                                 </button>
                                 <button type="button" ng-click="item.remove()">
-                                    Remove
+                                    {{'CSV_UPLOAD_REMOVE' | translate}}
                                 </button>
                             </td>
                         </tr>
@@ -66,19 +66,19 @@
                 </table>
             </section>
             <section class="section-grid">
-                <h2 class="section-title">Uploaded files
+                <h2 class="section-title">{{'CSV_UPLOADED_FILES' | translate}}
                     <button class="refresh-btn fr" ng-click="loadImportedItems()">
-                        <i class="fa fa-refresh"></i> <span>Refresh</span>
+                        <i class="fa fa-refresh"></i> <span>{{'CSV_UPLOAD_REFRESH' | translate}}</span>
                     </button>
                 </h2>
                 <table>
                     <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>Date</th>
-                            <th>Status</th>
-                            <th>Error Message</th>
-                            <th>Download</th>
+                            <th>{{'CSV_FILE_NAME' | translate}}</th>
+                            <th>{{'CSV_UPLOAD_DATE' | translate}}</th>
+                            <th>{{'CSV_UPLOAD_STATUS' | translate}}</th>
+                            <th>{{'CSV_UPLOAD_ERROR_MESSAGE' | translate}}</th>
+                            <th>{{'CSV_UPLOAD_DOWNLOAD' | translate}}</th>
                         </tr>
                     </thead>                    
                     <tbody>
@@ -87,7 +87,7 @@
                             <td>{{ item.startTime | bahmniDateTime }}</td>
                             <td>{{ item.status }}</td>
                             <td>{{ item.errorMessage }}</td>
-                            <td><a ng-if="item.hasError()" ng-href="{{item.errorFileUrl()}}">Error File</a></td>
+                            <td><a ng-if="item.hasError()" ng-href="{{item.errorFileUrl()}}">{{'CSV_UPLOAD_ERROR_FILE' | translate}}</a></td>
                         </tr>
                     </tbody>
                 </table>
