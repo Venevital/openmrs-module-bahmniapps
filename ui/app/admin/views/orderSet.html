@@ -36,7 +36,7 @@
             </section>
             <div class="orderSetMember-wrapper">
 
-                <input type="button" ng-click="addOrderSetMembers()" value="{{'ADD_NEW_MEMEBERS' | translate}}"
+                <input type="button" ng-click="addOrderSetMembers()" value="{{'ADD_NEW_MEMBERS' | translate}}"
                        class="button add-more-btn btn-small fr">
 
                 <fieldset>
@@ -48,7 +48,7 @@
                             <div class="clearfix order-drug-option" ng-class="{'column-container' : orderSetMember.concept.uuid}">
                                 <div class="col col1 form-field">
                                     <div class="field-attribute">
-                                        <label>{{'ORDER_TYPE_LABEL' | translate}} <span class="asterick">*</span></label>
+                                        <label>{{'ORDER_TYPE_TITLE' | translate}} <span class="asterick">*</span></label>
                                     </div>
                                     <div class="field-value">
                                         <select ng-model="orderSetMember.orderType.uuid"
@@ -100,8 +100,8 @@
                 </fieldset>
             </div>
             <div class="submit-btn-container clearfix">
-                <button type="submit" class="secondary-button fr" accesskey="s">ORDER_SET_SAVE_KEY</button>
-                <button type="reset" class="button fr" accesskey="c">ORDER_SET_CANCEL_KEY</button>
+                <button type="submit" class="secondary-button fr" accesskey="s"><span class="nav-link" ng-bind-html="{{'ORDER_SET_SAVE_KEY' | translate}}"></span></button>
+                <button type="reset" class="button fr" accesskey="c"><span class="nav-link" ng-bind-html="{{'ORDER_SET_CANCEL_KEY' | translate}}"></span></button>
             </div>
         </form>
     </section>
