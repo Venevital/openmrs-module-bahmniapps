@@ -398,5 +398,8 @@
     "PATIENT_INFO_AGE": "Edad",
     "PATIENT_INFO_REG_NO": "Número de Registro",
     "PATIENT_INFO_VISIT_DATE": "Fecha de Visita",
-    "PATIENT_INFO_DOCTOR_NAME": "Nombre del Doctor"
+    "PATIENT_INFO_DOCTOR_NAME": "Nombre del Doctor",
+    "PATIENT_INFO_VILLAGE": "Pueblo / Ciudad",
+    "PATIENT_INFO_LOCALITY": "Localidad/Sector",
+    "PATIENT_INFO_DISTRICT": "Distrito"
 }

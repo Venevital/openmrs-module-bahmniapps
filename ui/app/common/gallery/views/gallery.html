@@ -23,7 +23,7 @@
                     <div ng-if="isActive($index, album.tag)" class="slide pdf-slide">
                         <a class="pdf-link" href="{{image.src}}" target="_blank">
                             <i class="fa fa-file-pdf-o"></i>
-                            Click here to open Document in new window
+                            {{'OPEN_IN_NEW_WINDOW' | translate}}
                         </a>
                        <div class="scroll-pdf-frame">
                             <iframe ng-src="{{image.src}}" class="pdf-frame"></iframe>

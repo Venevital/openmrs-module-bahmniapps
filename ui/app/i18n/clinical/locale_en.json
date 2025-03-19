@@ -391,6 +391,7 @@
     "CDSS_ACTION": "Please go to Medications Tab to take further action",
     "MEDICATION_PRINT": "Print",
     "DAYS_ADMITTED_MESSAGE": "Days in hospital",
+    "MODULE_LABEL_NOTIFICATIONS_KEY": "Notifications",
     "DASHBOARD_TITLE_BASIC_DETAILS_KEY": "Basic Details",
     "DASHBOARD_TITLE_PROCEDURE_DISPLAY_CONTROL_KEY": "Procedure",
     "REGISTRATION_SEARCH_CONFIG_KEY": "Search",
@@ -399,5 +400,8 @@
     "PATIENT_INFO_AGE": "Age",
     "PATIENT_INFO_REG_NO": "Registration No",
     "PATIENT_INFO_VISIT_DATE": "Visit Date",
-    "PATIENT_INFO_DOCTOR_NAME": "Doctor Name"
+    "PATIENT_INFO_DOCTOR_NAME": "Doctor Name",
+    "PATIENT_INFO_VILLAGE": "Village / Town",
+    "PATIENT_INFO_LOCALITY": "Locality/Sector",
+    "PATIENT_INFO_DISTRICT": "District"
 }
