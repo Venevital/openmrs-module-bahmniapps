@@ -5,7 +5,7 @@ import "../../../styles/carbon-theme.scss";
 import "../../../styles/common.scss";
 import "./patientAllergiesControl.scss";
 import { AddAllergy } from "../../Components/AddAllergy/AddAllergy";
-import { FormattedMessage, IntlProvider } from "react-intl";
+import { FormattedMessage} from "react-intl";
 import {
   fetchAllergensOrReactions,
   fetchAllergiesAndReactionsForPatient
@@ -212,28 +212,26 @@ export function PatientAlergiesControl(props) {
                 <ViewAllergiesAndReactions allergies={allergiesAndReactions} showTextAsAbnormal={appService.getAppDescriptor().getConfigValue("showTextAsAbnormal")}/>
             }
           { showAddAllergyPanel && (
-            <IntlProvider>
-              <AddAllergy
-                reaction={transformedReactionData}
-                allergens={transformedAllergenData}
-                severityOptions={transformedSeverityData}
-                patient={patient}
-                provider={provider}
-                data-testid={"allergies-overlay"}
-                onClose={() => {
+            <AddAllergy
+              reaction={transformedReactionData}
+              allergens={transformedAllergenData}
+              severityOptions={transformedSeverityData}
+              patient={patient}
+              provider={provider}
+              data-testid={"allergies-overlay"}
+              onClose={() => {
+                setShowAddAllergyPanel(false);
+              }}
+              onSave={async (isSaveSuccess) => {
+                if(isSaveSuccess){
+                  setShowSuccessPopup(true);
                   setShowAddAllergyPanel(false);
-                }}
-                onSave={async (isSaveSuccess) => {
-                  if(isSaveSuccess){
-                    setShowSuccessPopup(true);
-                    setShowAddAllergyPanel(false);
-                  }
-                  else if(isSaveSuccess === false){
-                    setShowErrorPopup(true);
-                  }
-                }}
-              />
-            </IntlProvider>
+                }
+                else if(isSaveSuccess === false){
+                  setShowErrorPopup(true);
+                }
+              }}
+            />
           )}
           <NotificationCarbon messageDuration={3000} onClose={()=>{setShowSuccessPopup(false); window.location.reload()}} showMessage={showSuccessPopup} kind={"success"} title={"Allergy saved successfully"} hideCloseButton={true}/>
           <NotificationCarbon messageDuration={3000} onClose={()=>{setShowErrorPopup(false);}} showMessage={showErrorPopup} kind={"error"} title={"Error saving allergy"} hideCloseButton={true}/>
