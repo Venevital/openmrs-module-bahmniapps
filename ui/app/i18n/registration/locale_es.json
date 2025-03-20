@@ -127,5 +127,7 @@
     "GENDER_MALE_KEY": "Masculino",
     "GENDER_FEMALE_KEY": "Femenino",
     "GENDER_OTHER_KEY": "Otro",
-    "Patient Identifier": "Identificador del paciente"
+    "Patient Identifier": "Identificador del paciente",
+    "phoneNumber": "Número de Teléfono",
+    "alternatePhoneNumber": "Número de teléfono alternativo"
 }
