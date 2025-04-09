@@ -245,7 +245,7 @@ describe("AddAllergy", () => {
 
     const textArea = container.querySelector(".bx--text-area");
     expect(textArea.placeholder).toBe(
-      "Additional comments such as onset date etc."
+      "Comentarios adicionales como la fecha de inicio, etc."
     );
   });
 
@@ -266,7 +266,7 @@ describe("AddAllergy", () => {
     selectAllergen();
     selectReaction(container);
     selectSeverity(container);
-    const textArea = screen.getByPlaceholderText("Additional comments such as onset date etc.");
+    const textArea = screen.getByPlaceholderText("Comentarios adicionales como la fecha de inicio, etc.");
     expect(textArea).toBeTruthy();
     fireEvent.change(textArea, { target: { value: "New notes" } });
     fireEvent.blur(textArea);

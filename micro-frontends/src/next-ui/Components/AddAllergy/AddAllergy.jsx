@@ -112,7 +112,7 @@ export function AddAllergy(props) {
                 </RadioButtonGroup>
                 <TextArea
                   labelText={""}
-                  placeholder={"Additional comments such as onset date etc."}
+                  placeholder={"Comentarios adicionales como la fecha de inicio, etc."}
                   onBlur={(e) => {
                     setNotes(e.target.value);
                   }}

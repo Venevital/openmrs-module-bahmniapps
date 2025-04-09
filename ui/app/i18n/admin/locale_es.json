@@ -67,6 +67,8 @@
     "ORDER_SET_MEMBER": "Miembros del conjunto de órdenes",
     "ORDER_TYPE_LABEL": "Tipo de orden",
     "CONCEPT_NAME_TITLE": "Nombre del concepto",
+    "ORDER_SET_SAVE_ACCESS_KEY": "g",
+    "ORDER_SET_CANCEL_ACCESS_KEY": "c",
     "ORDER_SET_SAVE_KEY": "<u>G</u>uardar",
     "ORDER_SET_CANCEL_KEY": "<u>C</u>ancelar",
     "ORDER_SET_CREATE_NEW": "Crear nuevo",

@@ -11,7 +11,7 @@
         <tr>
             <td>{{'PATIENT_INFO_VILLAGE' | translate}}: <span class="value">{{patient.address.cityVillage}}</span></td>
             <td>{{'PATIENT_INFO_LOCALITY' | translate}}: <span class="value">{{patient.address.address2}}</span></td>
-            <td>{{'PATIENT_INFO_DISTRICT' | translate}}\: <span class="value">{{patient.address.countyDistrict}}</span></td>
+            <td>{{'PATIENT_INFO_DISTRICT' | translate}}: <span class="value">{{patient.address.countyDistrict}}</span></td>
         </tr>
         <tr ng-switch-when="true">
             <td colspan="3">{{'PATIENT_INFO_VISIT_DATE' | translate}}: <span class="value">{{(visitDate | bahmniDate) || (visitSummary.startDateTime | bahmniDate)}}</span></td>

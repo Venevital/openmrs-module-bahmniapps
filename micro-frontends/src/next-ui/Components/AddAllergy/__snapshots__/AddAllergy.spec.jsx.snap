@@ -84,7 +84,7 @@ exports[`AddAllergy should render the component 1`] = `
                   autocomplete="off"
                   class="bx--search-input"
                   id="allergen-search"
-                  placeholder="Type to search Allergen"
+                  placeholder="Escribe para buscar alérgeno"
                   role="searchbox"
                   type="text"
                 />

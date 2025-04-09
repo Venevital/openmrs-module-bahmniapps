@@ -68,6 +68,8 @@
     "ORDER_TYPE_LABEL": "Order Type",
     "CONCEPT_NAME_TITLE": "Concept Name",
     "ORDER_SET_SAVE_KEY": "<u>S</u>ave",
+    "ORDER_SET_SAVE_ACCESS_KEY": "s",
+    "ORDER_SET_CANCEL_ACCESS_KEY": "c",
     "ORDER_SET_CANCEL_KEY": "<u>C</u>ancel",
     "ORDER_SET_CREATE_NEW": "Create New",
     "ORDER_SET_ACTION": "Action",

@@ -64,7 +64,7 @@ export const SelectReactions = (props) => {
       <div>
         <Search
           id={"reaction-search"}
-          placeholder={"Type to search Reactions"}
+          placeholder={"Escribe para buscar reacciones"}
           value={searchKey}
           onChange={(e) => {
             search(e.target.value);

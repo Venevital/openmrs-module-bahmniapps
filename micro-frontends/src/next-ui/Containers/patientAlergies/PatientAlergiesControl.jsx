@@ -5,7 +5,7 @@ import "../../../styles/carbon-theme.scss";
 import "../../../styles/common.scss";
 import "./patientAllergiesControl.scss";
 import { AddAllergy } from "../../Components/AddAllergy/AddAllergy";
-import { FormattedMessage} from "react-intl";
+import { FormattedMessage, useIntl} from "react-intl";
 import {
   fetchAllergensOrReactions,
   fetchAllergiesAndReactionsForPatient

@@ -59,7 +59,7 @@ export function SearchAllergen(props) {
       <div>
         <Search
           id={"allergen-search"}
-          placeholder={"Type to search Allergen"}
+          placeholder={"Escribe para buscar alérgeno"}
           onChange={(e) => {
             search(e.target.value);
           }}
