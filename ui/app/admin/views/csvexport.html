@@ -4,7 +4,7 @@
 
         <form ng-submit="onConceptSelected()">
             <input class="enter-concept" type="text" name="conceptSet" ng-model="conceptSet" bahmni-autocomplete  strict-select="true"
-                   is-invalid="conceptNameInvalid" source="getConcepts" response-map="getDataResults" required placeholder="{{'ENTER_CONCEPT_PLACEHOLDER' | translate}}"/>
+                   is-invalid="conceptNameInvalid" source="getConcepts" response-map="getDataResults" required placeholder="{'CSV_EXPORT_PLACEHOLDER' | translate}"/>
             <button class="export-csv confirm" type="submit" class="row-remover">{{'CSV_EXPORT_BUTTON' | translate}}</button>
         </form>
     </div>
