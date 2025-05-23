@@ -21,13 +21,11 @@ angular.module('bahmni.common.uiHelper')
                     '</ul>',
          controller: function ($scope, backlinkService) {
              $scope.backLinks = backlinkService.getAllUrls();
-             console.log("[bmBackLinks] Initial BackLinks:", $scope.backLinks.map(b => b.url));
 
              $scope.$on('$stateChangeSuccess', function (event, state) {
                  if (state.data && state.data.backLinks) {
                      backlinkService.setUrls(state.data.backLinks);
                      $scope.backLinks = backlinkService.getAllUrls();
-                     console.log("[bmBackLinks] Updated BackLinks after state change:", $scope.backLinks.map(b => b.url));
 
                  }
              });
